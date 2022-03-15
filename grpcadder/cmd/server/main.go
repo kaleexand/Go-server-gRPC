@@ -1,5 +1,10 @@
 package main
 
+import (
+		"google.golang.org/grpc"
+		"grpcadder/pkg/adder"
+		"grpcadder/pkg/api"
+)
 func main(){
 	s := grpc.NewServer()
 	srv := &adder.GRPCServer{}
